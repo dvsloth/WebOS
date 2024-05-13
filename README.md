@@ -2,7 +2,9 @@
 
 Welcome to WebOS!
 
-![WebOS Logo](webos.png)
+<p align="center">
+  <img src="webos.png" alt="WebOS Logo">
+</p>
 
 ## Introduction
 
