@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBIOS Setup Utility</title>
+    <link rel="stylesheet" href="../css/bios.css">
+</head>
+<body>
+    <div class="header">WeBIOS Setup Utility</div>
+    <div class="sub-header"></div>
+    <div class="menu">
+        <div class="menu-item" onclick="setChoiceAndRedirect('3.1')">WebOS 3.1</div>
+        <div class="menu-item" onclick="setChoiceAndRedirect('9x')">WebOS 9x</div>
+        <div class="menu-item" onclick="setChoiceAndRedirect('Exp')">WebOS Exp</div>
+        <div class="menu-item" onclick="setChoiceAndRedirect('Vista')">WebOS Vista</div>
+        <div class="menu-item" onclick="setChoiceAndRedirect('7')">WebOS 7</div>
+    </div>
+    <div class="footer"></div>
+    <script>
+        function setChoiceAndRedirect(choice) {
+            if (choice === '9x') {
+                document.cookie = "choice=" + choice + ";path=/";
+                window.location.href = "load";
+            } else {
+                alert(choice + " doesn't exist");
+            }
+        }
+    </script>
+</body>
+</html>

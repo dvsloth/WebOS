@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOS 9x</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/context.css">
+    <link rel="icon" type="image/x-icon" href="./icons/computer_explorer_cool-0.png">
+</head>
+<body>
+    <div id="desktop">
+        <div class="icon crisp" id="Computer" style="left: 20px; top: 20px;" data-window-content="computer.html">
+            <img src="./icons/computer_explorer_cool-0.png" alt="My Computer">
+            <span>My Computer</span>
+        </div>
+        <div class="icon crisp" id="Bin" style="left: 20px; top: 100px;" data-window-content="bin.html">
+            <img src="./icons/recycle_bin_empty-4.png" alt="Recycle Bin">
+            <span>Recycle Bin</span>
+        </div>
+        <div class="icon crisp" id="IExplore" style="left: 18px; top: 180px;" data-window-content="iexplore.html">
+            <img src="./icons/msie1-5.png" alt="Internet Explorer">
+            <span>Internet Explorer</span>
+        </div>
+        <div class="icon crisp" id="Documents" style="left: 18px; top: 270px;" data-window-content="documents.html">
+            <img src="./icons/directory_open_file_mydocs-5.png" alt="My Documents">
+            <span>My Documents</span>
+        </div>
+    </div>    
+    <div id="taskbar">
+        <div class="start-button">
+            <div class="start-icon crisp"></div>
+            Start
+        </div>
+        <div id="start-menu" class="start-menu hidden">
+            <div class="menu-banner">
+                <p>
+                    <span class="bold-text">WebOS</span><span class="normal-text">9x</span>
+                </p>
+            </div>            
+            <div class="menu-items">
+                <button class="menu-item">
+                    <img class="crisp" src="./icons/windows_update_large-4.png" alt="Windows Update Icon">
+                    WebOS Update
+                </button>
+                <div class="menu-separator"></div>
+                <button class="menu-item crisp"><img src="./icons/folder-programs.png" alt="Programs Icon">
+                    Programs
+                </button>
+                <button class="menu-item crisp"><img src="./icons/directory_favorites-4.png" alt="Favorites Icon">
+                    Favorites
+                </button>
+                <button class="menu-item crisp"><img src="./icons/directory_open_file_mydocs-0.png" alt="My Documents Icon">
+                    Documents
+                </button>
+                <button class="menu-item crisp"><img src="./icons/settings_gear-0.png" alt="Settings Icon">
+                    Settings
+                </button>
+                <button class="menu-item crisp"><img src="./icons/search_file-1.png" alt="Find Icon">
+                    Find
+                </button>
+                <button class="menu-item crisp"><img src="./icons/help_book_cool-0.png" alt="Help Icon">
+                    Help
+                </button>
+                <button class="menu-item-run crisp"><img src="./icons/application_hourglass_small-0.png" alt="Run Icon">
+                    Run...
+                </button>
+                <div class="menu-separator"></div>
+                <button class="menu-item-off crisp"><img src="./icons/key_win-3.png" alt="Log Off Icon">
+                    Log Off...
+                </button>
+                <button class="menu-item-down crisp"><img src="./icons/shut_down_normal-0.png" alt="Shut Down Icon">
+                    Shut Down...
+                </button>
+            </div>
+        </div> 
+        <div id="clock" class="taskbar-clock"></div>
+    </div>         
+    <div id="context-menu" class="hidden">
+        <ul>
+            <li id="RBAND">RubberBand</li>
+            <div class="context-separator"></div>
+            <li id="Arrang-Icon">Arrange Icons</li>
+            <li id="Line-Icon">Line Up Icons</li>
+            <div class="context-separator"></div>
+            <li id="refresh">Refresh</li>
+            <div class="context-separator"></div>
+            <li id="Paste" class="disabled">Paste</li>
+            <li id="Paste-Sct" class="disabled">Paste Shortcut</li>
+            <div class="context-separator"></div>
+            <li id="New-Context">New</li>
+            <div class="context-separator"></div>
+            <li id="Properties-Context">Properties</li>
+        </ul>
+    </div>
+    
+    <div id="context-new" class="hidden">
+        <ul>
+            <li id="new-folder">Folder</li>
+            <li id="new-shortcut">Shortcut</li>
+            <div class="context-separator"></div>
+            <li id="new-text">Text Document</li>
+            <li id="new-wpdoc">WordPad Document</li>
+            <li id="new-bitmap">Bitmap Image</li>
+            <li id="new-wave">Wave Sound</li>
+            <li id="new-tdl">Tycromoft Data Link</li>
+            <li id="new-brief">Briefcase</li>
+        </ul>
+    </div>    
+    <div id="context-RBAND" class="hidden">
+        <ul>
+            <li id="Classic-Dotted">Classic Dotted</li>
+            <li id="New-gen-blue">New Gen Blue</li>
+        </ul>
+    </div>    
+    <audio id="startup-sound" src="./audio/boot.mp3"></audio>
+    <script src="./javascript/9x/context-menu.js" defer></script>
+    <script src="./javascript/9x/desktop.js" defer></script>
+    <script src="./javascript/9x/icons.js" defer></script>
+    <script src="./javascript/9x/Rubberband.js" defer></script>
+    <script src="./javascript/9x/startMenu.js" defer></script>
+    <script src="./javascript/9x/clock.js" defer></script>
+    <script src="./javascript/9x/audio.js" defer></script>
+    <script src="./javascript/9x/window.js" defer></script>
+</body>
+</html>

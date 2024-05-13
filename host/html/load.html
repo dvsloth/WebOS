@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,700');
+        body {
+            background: #000;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .window {
+            position: relative;
+            width: 90vw;
+            max-width: 400px;
+        }
+
+        .logo {
+            text-align: center;
+            width: 100%;
+            padding: 5% 0;
+        }
+
+        .container {
+            width: 80%;
+            height: 1.5em;
+            border: 2px solid #b2b2b2;
+            border-radius: 7px;
+            margin: 1em auto;
+            padding: 2px 1px;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 9px;
+            height: 100%;
+            background: linear-gradient(to bottom, #2838c7 0%, #5979ef 17%, #869ef3 32%, #869ef3 45%, #5979ef 59%, #2838c7 100%);
+            display: inline-block;
+            margin-right: 2px;
+            animation: loader 2s infinite;
+            animation-timing-function: linear;
+        }
+
+        .top, .mid, .bottom {
+            padding: 0;  
+        }
+
+        .top {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .mid {
+            font-size: 4em;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .mid span {
+            font-size: 50%;
+            vertical-align: top;
+            color: #FF6821;
+            margin-top: -0.3em;
+        }
+
+        .bottom {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        @keyframes loader{
+  0%{
+    transform: translate(-30px);
+  }
+  100%{
+    transform: translate(350px);
+  }
+}
+
+        @media (max-width: 400px) {
+            .mid {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="logo">
+            <p class="top">dvsloth</p>
+            <p class="mid">WebOS<span>9X</span></p>
+            <p class="bottom">Professional</p>
+        </div>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <script>
+        function getCookie(name) {
+            let cookie = {};
+            document.cookie.split(';').forEach(function(el) {
+                let [key, value] = el.split('=');
+                cookie[key.trim()] = value;
+            });
+            return cookie[name];
+        }
+    
+        window.onload = function() {
+            var choice = getCookie('choice');
+    
+            setTimeout(function() {
+                if (choice === '9x') {
+                    window.location.href = '9x';
+                } else {
+                    alert("Please press back and select a valid option")
+                }
+            }, 8000);
+        }
+    </script>
+    
+</body>
+</html>
