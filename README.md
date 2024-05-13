@@ -2,9 +2,9 @@
 
 Welcome to WebOS!
 
-<div style="text-align:center;">
-    ![WebOS Logo](webos.png)
-</div>
+<p align="center">
+  <img src="webos.png" alt="WebOS Logo">
+</p>
 ## Introduction
 
 WebOS is a web-based operating system simulation designed to bring back the charm of classic Windows versions right to your browser. Inspired by the parody website Windows 93 and developed in collaboration with ButterDebuggers' "WebOS" project, this simulation aims to provide a fun and interactive experience reminiscent of the early days of personal computing.
