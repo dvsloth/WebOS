@@ -436,11 +436,13 @@ iframe {
     border-bottom-color: #333333;
 	border-style: inset;
 }
+
 .taskbar-icon img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
+
 .fix-drag {
 	pointer-events: none;
 }
